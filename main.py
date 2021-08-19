@@ -13,6 +13,7 @@ def generate_output(algorithm):
     print(''.ljust(25, '-'))
     print(f'Peso maximo de la mochila: {MAX_WEIGHT}')
     print('Peso de la mochila:', sum([item.weight for item in result]))
+    print('Valor total obtenido:', sum([item.value for item in result]))
     print('Contenido de la mochila:\n')
     print(tabulate(result, headers=['Nombre', 'Peso', 'Valor']))
     print(''.ljust(25, '-'))
