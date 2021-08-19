@@ -2,7 +2,7 @@ from models.item import Item
 
 # Todos los algoritmos retornaran una lista de items
 
-def h1_menor_peso(items) -> list:
+def h1_menor_peso(items: list) -> list:
     '''
     Esta heuristica va almacenando los items priorizando los que
     tienen menor peso hasta llenar el peso maximo
@@ -10,7 +10,7 @@ def h1_menor_peso(items) -> list:
     
     return []
 
-def h2_mayor_valor(items) -> list:
+def h2_mayor_valor(items: list) -> list:
     '''
     Esta heuristica va almacenando los items priorizando los que
     tienen mayor valor hasta llenar el peso maximo
@@ -18,7 +18,7 @@ def h2_mayor_valor(items) -> list:
     
     return []
 
-def h3_mayor_cociente(items) -> list:
+def h3_mayor_cociente(items: list) -> list:
     '''
     Esta heuristica va almacenando los items priorizando los que
     tienen una mayor relacion valor/peso
