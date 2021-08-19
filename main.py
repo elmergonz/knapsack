@@ -11,7 +11,8 @@ def generate_output(algorithm):
     result: list[Item] = algorithm(ITEMS)
 
     print(''.ljust(25, '-'))
-    print(f'Peso maximo de la mochila: {MAX_WEIGHT}')
+    print('Nombre del algoritmo usado:', algorithm.__name__)
+    print('Peso maximo de la mochila:', MAX_WEIGHT)
     print('Peso de la mochila:', sum([item.weight for item in result]))
     print('Valor total obtenido:', sum([item.value for item in result]))
     print('Contenido de la mochila:\n')
