@@ -20,10 +20,10 @@ def generate_output(algorithm):
     print(''.ljust(25, '-'))
 
 def main():
-    generate_output(h1_menor_peso)
+    # generate_output(h1_menor_peso)
     # generate_output(h2_mayor_valor)
     # generate_output(h3_mayor_cociente)
-    # generate_output(dp_algorithm)
+    generate_output(dp_algorithm)
 
 if __name__ == '__main__':
     main()
